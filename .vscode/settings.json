@@ -1,6 +1,8 @@
 {
 	"files.associations": {
 		"stdlib.h": "c",
-		"main.h": "c"
+		"main.h": "c",
+		"ctype.h": "c",
+		"locale.h": "c"
 	}
 }
