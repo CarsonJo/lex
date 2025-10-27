@@ -7,8 +7,23 @@
 	qwerqwerqwrerqwer
 	qwerqwerqwrerqw
 %}
-te test
-te test
+%arrayqwe
+%x COMMENT
+%S string
+%s teop
+%X qwerqwer
+%p 100
+%n 200
+%a 300
+%e 400
+%k 500
+%o 600
+%p 100
+%n 200
+%a 300
+%e 400
+%k 500
+%o 600
 	#define BLANK a
 a test
 q' tre

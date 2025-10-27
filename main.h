@@ -20,8 +20,8 @@
 # include "gnl/get_next_line.h"
 #define ARRAY_SIZE 100
 
-#define ARRAY 0
-#define PTR 1
+#define ARRAY 1
+#define PTR 0
 
 typedef struct start_condition{
 	char	*name;

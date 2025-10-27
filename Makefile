@@ -1,19 +1,21 @@
 SRC =	main.c\
 		check.c\
-		gnl/get_next_line_bonus.c\
-		gnl/get_next_line_utils_bonus.c\
+		definitions/definition.c\
+		gnl/get_next_line.c\
+		gnl/get_next_line_utils.c\
 	
 
 OBJ =	main.o\
 		check.o\
-		gnl/get_next_line_bonus.o\
-		gnl/get_next_line_utils_bonus.o\
+		definitions/definition.o\
+		gnl/get_next_line.o\
+		gnl/get_next_line_utils.o\
 
 CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -g
 
-NAME = server
+NAME = lex
 
 all : $(NAME)
 
