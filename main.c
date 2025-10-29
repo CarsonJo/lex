@@ -18,7 +18,6 @@ static void init_opt(t_option* var, int argc)
 {
 	var->flag = 0;
 	var->fd = malloc(sizeof(int) * argc);
-	var->output_file = open("lex.yy.c", O_CREAT | O_RDWR, S_IRWXU);
 	
 	var->s_start = malloc(sizeof(t_start_condition) * ARRAY_SIZE);
 	memset(var->s_start, 0, sizeof(t_start_condition) * ARRAY_SIZE);
@@ -40,6 +39,15 @@ int main(int argc, char **argv)
 	
 	init_opt(&var, argc);
 	check_option(argv, argc, &var.flag, var.fd);
+	if (var.flag & OPTION_T_FLAG)
+		var.output_file = STDOUT_FILENO;
+	else
+		var.output_file = open("lex.yy.c", O_CREAT | O_RDWR, S_IRWXU);
+	if (var.output_file < 0)
+	{
+		perror("output_file");
+		exit(1);
+	}
 	setlocale(LC_ALL, "");
 	definition(&var);
 	// printf("flag %x\n", flag);

@@ -9,8 +9,8 @@
 # include <ctype.h>
 
 # define OPTION_N 'n'
-# define OPTION_V 't'
-# define OPTION_T 'v'
+# define OPTION_V 'v'
+# define OPTION_T 't'
 
 # define OPTION_N_FLAG 1
 # define OPTION_V_FLAG 2
